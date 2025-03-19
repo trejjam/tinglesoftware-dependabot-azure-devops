@@ -1,5 +1,5 @@
 {
-  "id": "dependabot-dev",
+  "id": "dependabot-avi-fork",
   "version": "#{MAJOR_MINOR_PATCH}#.#{BUILD_NUMBER}#",
-  "name": "Dependabot (Dev)"
+  "name": "Dependabot - Avi fork"
 }
