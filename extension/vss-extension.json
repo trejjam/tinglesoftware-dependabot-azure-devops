@@ -1,11 +1,11 @@
 {
   "$schema": "http://json.schemastore.org/vss-extension.json",
   "manifestVersion": 1,
-  "id": "dependabot",
-  "name": "Dependabot",
+  "id": "dependabot-avi-fork",
+  "name": "Dependabot - Avi fork",
   "description": "Automatically update dependencies and vulnerabilities in your code",
   "version": "2.0.0",
-  "publisher": "tingle-software",
+  "publisher": "trejbal",
   "public": false,
   "targets": [
     {
