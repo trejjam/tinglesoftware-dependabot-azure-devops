@@ -215,6 +215,13 @@ export class DependabotCli {
 
   // Create the jobs directory if it does not exist
   private ensureJobsPathExists(): void {
+    if (fs.existsSync(this.jobsPath)) {
+      fs.rmSync(this.jobsPath, {
+        recursive: true,
+        force: true,
+      });
+    }
+
     if (!fs.existsSync(this.jobsPath)) {
       fs.mkdirSync(this.jobsPath);
     }
@@ -223,10 +230,10 @@ export class DependabotCli {
   // Clean up the jobs directory and its contents
   public cleanup(): void {
     if (fs.existsSync(this.jobsPath)) {
-      fs.rmSync(this.jobsPath, {
-        recursive: true,
-        force: true,
-      });
+      //fs.rmSync(this.jobsPath, {
+      //  recursive: true,
+      //  force: true,
+      //});
     }
   }
 }
