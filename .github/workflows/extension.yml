@@ -153,7 +153,7 @@ jobs:
           --vsix ${{ github.workspace }}/dev/*.vsix
           --auth-type pat
           --token ${{ secrets.AZURE_DEVOPS_EXTENSION_TOKEN }}
-          --share-with tingle rhyskoedijk
+          --share-with aviationexam
 
       - name: Publish to marketplace (prod)
         if: startsWith(github.ref, 'refs/tags/')
